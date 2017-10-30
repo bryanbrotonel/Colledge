@@ -1,151 +1,150 @@
 <html>
 
-<head>
-  <title>Colledge</title>
-  <meta name='viewport' content='width = device-width, initial-scale = 1'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'>
-  <link rel='stylesheet' href='css/style.css'>
-  <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js'></script>
-  <script type='text/javascript' src='js/main.js'></script>
-</head>
+  <head>
+    <title>Colledge</title>
+    <meta name='viewport' content='width = device-width, initial-scale = 1'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js'></script>
+    <script type='text/javascript' src='js/main.js'></script>
+  </head>
 
-<script>
-  $(document).ready(function() {
-    $('select').material_select();
-  });
-</script>
+  <script>
+    $(document).ready(function() {
+      $('select').material_select();
+    });
+  </script>
 
-<nav class="pink accent-1" role="navigation">
-  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Colledge</a>
-    <ul class="right hide-on-med-and-down">
-      <!-- <li><a href="#">Back</a></li> -->
-    </ul>
+  <nav class="pink accent-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Colledge</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.php">Back</a></li>
+      </ul>
 
-    <ul id="nav-mobile" class="side-nav">
-      <!-- <li><a href="#">Back</a></li> -->
-    </ul>
-    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-  </div>
-</nav>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.php">Back</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-<div class="container">
-  <br>
-  <div>
-    <form action='submit.php'>
-      <h4 class="center-align">Let's get personal.</h4>
+  <body>
+    <div class="container">
       <br>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix" style="font-size: 35px;">face</i>
-          <input placeholder="Mr. Colledge Student" id="first_name" type="text">
-          <label for="name">Who are you?</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix" style="font-size: 35px;">cake</i>
-          <input type="number" name="Number" placeholder="12" class="validate"/>
-          <label for="age">How old are you?</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix" style="font-size: 35px;">location_on</i>
-          <input placeholder="Magic City" id="first_name" type="text">
-          <label for="hometown">Where you from?</label>
-        </div>
-      </div>
-      <br>
-      <h4 class="center-align">Now now, don't lie to us.</h4>
-      <br>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="col s6 row">
-          <i class="material-icons prefix" style="font-size: 35px;">local_library</i>
-          <label>How often do you study?</label>
-          <select>
+      <div>
+        <form action='submit.php'>
+          <h4 class="center-align">Let's get personal.</h4>
+          <br>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix" style="font-size: 35px;">face</i>
+              <input placeholder="Mr. Colledge Student" id="first_name" type="text">
+              <label for="name">Who are you?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix" style="font-size: 35px;">cake</i>
+              <input type="number" name="Number" placeholder="12" class="validate" />
+              <label for="age">How old are you?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix" style="font-size: 35px;">location_on</i>
+              <input placeholder="Magic City" id="first_name" type="text">
+              <label for="hometown">Where you from?</label>
+            </div>
+          </div>
+          <br>
+          <h4 class="center-align">Now now, don't lie to us.</h4>
+          <br>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="col s6 row">
+              <i class="material-icons prefix" style="font-size: 35px;">local_library</i>
+              <label>How often do you study?</label>
+              <select>
             <option value = "" disabled selected>Select an option</option>
             <option value = "Always">Always</option>
             <option value = "Sometimes">Sometimes</option>
             <option value = "Never">Never</option>
           </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="col s6 row">
-          <i class="material-icons prefix" style="font-size: 35px;">directions_run</i>
-          <label>How often do you skip class?</label>
-          <select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="col s6 row">
+              <i class="material-icons prefix" style="font-size: 35px;">directions_run</i>
+              <label>How often do you skip class?</label>
+              <select>
             <option value = "" disabled selected>Select an option</option>
             <option value = "Always">Always</option>
             <option value = "Sometimes">Sometimes</option>
             <option value = "Never">Never</option>
           </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s3">
-          <div class="row"></div>
-        </div>
-        <div class="col s6 row">
-          <i class="material-icons prefix" style="font-size: 35px;">pregnant_woman</i>
-          <label>Are you pregnant?</label>
-          <select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s3">
+              <div class="row"></div>
+            </div>
+            <div class="col s6 row">
+              <i class="material-icons prefix" style="font-size: 35px;">pregnant_woman</i>
+              <label>Are you pregnant?</label>
+              <select>
             <option value = "" disabled selected>Select an option</option>
             <option value = "Yes">Yes</option>
             <option value = "No">No</option>
             <option value = "Unsure">Unsure</option>
           </select>
+            </div>
+          </div>
+          <div class="center-align">
+            <button class="pink accent-1 btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col s6 left-align">
+          <h5 class="white-text">Who Are We?</h5>
+          <p class="grey-text text-lighten-4">We are one hour start up by a pair of college students.</p>
+        </div>
+        <div class="col s6 right-align">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.facebook.com/">Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/">Twitter</a></li>
+            <li><a class="white-text" href="https://www.instagram.com/">Instagram</a></li>
+          </ul>
         </div>
       </div>
-      <button class="btn">Submit</button>
-    </form>
-  </div>
-
-
-  <div class="container">
-  </div>
-</div>
-
-<footer class="page-footer orange">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Who Are We?</h5>
-        <p class="grey-text text-lighten-4">We are one hour start up by a pair of college students.</p>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Facebook</a></li>
-          <li><a class="white-text" href="#!">Twitter</a></li>
-          <li><a class="white-text" href="#!">Snapchat</a></li>
-          <li><a class="white-text" href="#!">Instagram</a></li>
-        </ul>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Styling by the wonderfuls at <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </html>
