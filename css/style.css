@@ -24,7 +24,6 @@
   box-shadow: 0 1px 0 0 green;
 }
 
-
 /* invalid color */
 
 .input-field input[type=text].invalid {
@@ -47,11 +46,20 @@ h5 {
 }
 
 fieldset {
-    border: 0;
+  border: 0;
 }
 
-.input-field div.error, .select div.error{
-  color:#FF4081;
+footer {
+  position: relative
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+}
+
+.input-field div.error, .select div.error {
+  color: #FF4081;
 }
 
 @media only screen and (min-width: 768px) {
