@@ -13,7 +13,7 @@ $(function() {
 
 			class: "required",
 
-			pregnant: "required"
+			sleep: "required"
 
 		},
 		messages: {
@@ -23,11 +23,11 @@ $(function() {
 
 			country: "Error: Required field - You're not homeless, are you?",
 
-			study: "Error: Required field - We won't tell your future professors, don't worry.",
-
 			class: "Error: Required field - We won't tell your parents, don't worry.",
 
-			pregnant: "Error: Required field - You really shouldn't skip this one."
+			study: "Error: Required field - We won't tell your future professors, don't worry.",
+
+			sleep: "Error: Required field - You can sleep after you answer this."
 
 		},
 		errorElement: 'div',
