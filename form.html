@@ -5,13 +5,15 @@
     <meta name='viewport' content='width = device-width, initial-scale = 1'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'>
+    <link rel="stylesheet" href="build/css/countrySelect.css">
     <link rel='stylesheet' href='css/style.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js" type="text/javascript"></script>
     <script src='js/main.js' type='text/javascript'></script>
-    <script src='js/formvalidate.js' type='text/javascript'></script>
+    <script src='js/form.js' type='text/javascript'></script>
+    <script src="build/js/countrySelect.min.js"></script>
   </head>
 
   <nav class="pink accent-1" role="navigation">
@@ -31,7 +33,7 @@
     <div class="container">
       <br>
       <div>
-        <form id="form" action='submit.html'>
+        <form id="form" action="submit.html">
           <fieldset class="grey lighten-4">
             <h4 class="center-align">Let's get personal.</h4>
             <br>
@@ -41,7 +43,7 @@
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix" style="font-size: 35px;">face</i>
-                <input name="name" placeholder="Who are you?" type="text">
+                <input id="name" name="name" placeholder="Who are you? (required)" type="text">
               </div>
             </div>
             <div class="row">
@@ -50,16 +52,16 @@
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix" style="font-size: 35px;">cake</i>
-                <input type="number" name="age" placeholder="Age" />
+                <input type="number" name="age" placeholder="How old are you? (required)" />
               </div>
             </div>
             <div class="row">
               <div class="col s3">
                 <div class="row"></div>
               </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix" style="font-size: 35px;">location_on</i>
-                <input id="hometown" name="hometown" type="text" placeholder="Where are you from?">
+              <div class="input-field col s6 center-align">
+                <h5>Where are you from?</h5>
+                <input type="text" id="country">
               </div>
             </div>
             <br>
@@ -88,7 +90,7 @@
                 <div class="row"></div>
               </div>
               <div class="select col s6 row">
-                <h5>How often do you skip class?</h5>
+                <h5>How often do you skip class? <span class="grey-text lighten-5">(required)</span></h5>
                 <i class="material-icons prefix" style="font-size: 35px;">directions_run</i>
                 <select class="browser-default" name="class">
                 <option value = "" disabled selected>Select an option</option>
@@ -104,7 +106,7 @@
                 <div class="row"></div>
               </div>
               <div class="select col s6 row">
-                <h5>Are you pregnant?</h5>
+                <h5>Are you pregnant? <span class="grey-text lighten-5">(required)</span></h5>
                 <i class="material-icons prefix" style="font-size: 35px;">pregnant_woman</i>
                 <select class="browser-default" name="pregnant">
                   <option value = "" disabled selected>Select an option</option>
@@ -150,3 +152,6 @@
   </footer>
 
 </html>
+<script>
+  $("#country").countrySelect();
+</script>

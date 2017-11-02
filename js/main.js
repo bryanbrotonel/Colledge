@@ -9,7 +9,6 @@ $(document).ready(function() {
     storageBucket: "colledge-f0bab.appspot.com",
     messagingSenderId: "26297603867"
   };
-  
   firebase.initializeApp(config);
 
  $('select').material_select();
