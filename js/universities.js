@@ -29,7 +29,7 @@ $(function() {
 		if (typeof list[0] !== 'undefined') {
 			name.innerHTML = "Congratulations, " + name + " you're going to:";
 			hometown.innerHTML = list[Math.floor((Math.random() * list.length))];
-			document.getElementById("again").style.display = 'none';
+			// document.getElementById("again").style.display = 'none';
 		} else {
 			name.innerHTML = "Sorry,"
 			hometown.innerHTML = "We couldn't find a Colledge for you."
