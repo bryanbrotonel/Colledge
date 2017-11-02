@@ -15,8 +15,7 @@ $(function() {
 		return "";
 	}
 
-	var hometown = getCookie("hometown").replace(" ", "%");
-
+	var name = getCookie("name");
 
 	var choice = $.getJSON('world_universities_and_domains.json', function(data) {
 		var list = [];
@@ -26,15 +25,10 @@ $(function() {
 			}
 		}
 
-		console.log(list);
-
-		var colledge = list[Math.floor((Math.random() * list.length))];
-		console.log(colledge);
-
 		//Sets college DOM text
 		if (typeof list[0] !== 'undefined') {
-			name.innerHTML = "Congratulations, " + getCookie("name") + " you're going to:";
-			hometown.innerHTML = colledge;
+			name.innerHTML = "Congratulations, " + name + " you're going to:";
+			hometown.innerHTML = list[Math.floor((Math.random() * list.length))];
 			document.getElementById("again").style.display = 'none';
 		} else {
 			name.innerHTML = "Sorry,"
@@ -46,14 +40,14 @@ $(function() {
 
 
 	//Create DOM references
-	var name = document.getElementById("name");
+	var nameDOM = document.getElementById("name");
 	var hometown = document.getElementById("hometown");
 
 	//Sets name DOM text
 	if (getCookie("name") != "") {
-		name.innerHTML = "Congratulations, " + getCookie("name") + " you're going to:";
+		nameDOM.innerHTML = "Congratulations, " + name + " you're going to:";
 	} else {
-		name.innerHTML = "I think we've lost your name.."
+		nameDOM.innerHTML = "I think we've lost your name.."
 	}
 
 });
